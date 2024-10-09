@@ -17,6 +17,11 @@
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		}
 		
+		.section {
+			margin-bottom: 40px;
+			text-align: center;
+		}
+		
 		h2 {
 			color: #333;
 			margin-top: 0;
@@ -51,9 +56,22 @@
 </head>
 <body>
 	<div class="container">
-		<h2>JavaScript Confirm Box</h2>
-		<button onclick="confirmFunction()">Try it</button>
-		<p id="demo"></p>
+		<div class="section">
+			<h2>JavaScript Confirm Box</h2>
+			<button onclick="confirmFunction()">Try it</button>
+			<p id="demo"></p>
+		</div>
+		
+		<div class="section">
+			<h2>JavaScript Alert</h2>
+			<button onclick="alertFunction()">Try it</button>
+		</div>
+		
+		<div class="section">
+			<h2>JavaScript Prompt</h2>
+			<button onclick="promptFunction()">Try it</button>
+			<p id="prompt-demo"></p>
+		</div>
 		
 		<script>
 			function confirmFunction() {
@@ -65,22 +83,11 @@
 				}
 				document.getElementById("demo").innerHTML = message;
 			}
-		</script>
-		
-		<h2>JavaScript Alert</h2>
-		<button onclick="alertFunction()">Try it</button>
-		
-		<script>
+			
 			function alertFunction() {
 				alert("I'm an Alert Box!");
 			}
-		</script>
-		
-		<h2>JavaScript Prompt</h2>
-		<button onclick="promptFunction()">Try it</button>
-		<p id="prompt-demo"></p>
-		
-		<script>
+			
 			function promptFunction() {
 				let userName = prompt("Please enter your name:");
 				document.getElementById("prompt-demo").innerHTML = "Hello, " + userName + "!";
