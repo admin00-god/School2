@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome Page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		h2 {
+			color: #333;
+			margin-top: 0;
+		}
+		
+		button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		button:hover {
+			background-color: #3e8e41;
+		}
+		
+		#welcome-message {
+			font-size: 24px;
+			color: #666;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>JavaScript Welcome Page</h2>
+		<p id="welcome-message"></p>
+		<button onclick="myFunction()">Try it</button>
+		
+		<script>
+			function myFunction() {
+				const userName = prompt("Enter your Name");
+				document.getElementById("welcome-message").innerHTML = `Welcome, ${userName}!`;
+			}
+		</script>
+	</div>
+</body>
+</html>s
